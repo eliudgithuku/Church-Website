@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #191970;
+    overflow-x: hidden;
+    font-family: 'Baskervville', serif;
+    margin: 0px;
+}
+body h1,h2,h3,h4,h5,h6{
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 500;
+}
+header{
+    background:#ffffff;
+    height: 40px;
+}
+.logo{
+padding-left: 5px;
+align-items: center;
+vertical-align: middle;
+}
+.logo img{
+        width: 270px;
+        height: 22px;
+}
+
+#clock{
+    margin-top: 10px;
+    text-align: right;
+    padding-right: 10px;
+    color: #ff0000;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.banner{
+    background: linear-gradient(transparent, #000000), url(../images/REAR\ VIEW\ 1.jpg);
+    position: center;
+    height: 100vh;
+    background-size: cover;
+    margin: 0px 30px;
+ }
+.banner-text{
+        text-align: center;
+        padding-top: 200px;
+        color: #fff;
+ }
+ .banner-text h3{
+        text-transform: uppercase;
+        font-size: 3em;
+    }
+.banner-text hr{
+        width: 600px;
+        height: 4px;
+        background: #191970;
+        margin-left: 600px;
+ }
+ .banner-text p{
+        font-size: 2em;
+        margin: 20px;
+}
+
+.btn{
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    margin-left: 20px;
+    border-radius: 10px 5px;
+    background: transparent;
+    border: 1px  solid #fff;} 
+    
+.btn  a{
+        text-decoration: none;
+        text-transform: capitalize;
+        color: #fff;
+        font-size: 20px;
+    }
+
+.btn:hover{
+    box-shadow: inset 300px 0px 0px #191970;
+    transition: ease-in-out 1.5s;
+}
+nav{
+    background: #191970;
+    text-align: center;
+    font:'poppins', sans-serif;
+    border-top: 3px double red;
+}
+nav  ul{
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        justify-content: space-around;
+ }
+nav  ul  li{
+        width: 130px;
+        margin: 15px;
+        padding: 10px;
+ }
+ nav  ul  li  a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+ }
+ nav ul  li  a .fa ,.icon{
+        margin-right: 2px;
+   }
+
+.active ,nav ul li:hover{
+    background: #cabfbf;
+    border-radius: 3px 1px;
+    transition: ease-in-out .5s;
+}
+.icon{
+    width: 20px;
+    background: #cabfbf;
+}
+.submenu-1{
+    display: none;
+}
+nav ul li:hover .submenu-1 {
+    display: block;
+    position: absolute;
+    background:#fff;
+    margin-top: 13px;
+    margin-left: -15px;
+    border-radius: 20px;
+    transition: ease-in-out 1.5s;}
+.submenu-1  ul{
+        display: block;
+        margin: 10px;
+        transition: ease-in-out 1.5s;
+    }
+.submenu-1  ul  li{
+        width: 125px;
+        padding: 10px;
+        border-bottom: 1px dotted #fff;
+        text-align: left;
+        transition: 1.3s;
+    }
+.submenu-1  a{
+        color: #000000;
+    }
+    nav ul li:hover .submenu-1  ul  li   li a   :last-child{
+        border-bottom: none;
+    }
+
+/*-----------------------------------------sidenav---------------------------------------*/
+    .sidenav {
+        height: 100%; 
+        width: 0; 
+        position: fixed; 
+        z-index: 1; 
+        top: 0; 
+        left: 0;
+        background: #191970;
+        overflow-x: hidden; 
+        padding-top: 60px; 
+        transition: 0.5s; 
+      }
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      .sidenav a{
+        text-decoration: none;
+        color: rgb(255, 254, 254);
+      }
+      .sidenav .submenu-1  a{
+        color: #000000;
+    }
+
+/***************************************Ministries**********************************************/
+
+.ministries{
+    padding: 60px 0px;
+    margin: 0px 30px;
+}
+.ministries h3{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.ministry-container{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    max-width: 100vw;
+    z-index: 1;
+    border: 15px solid transparent;
+}
+.ministry-container .card{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px transparent;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+}
+.ministry-container .card  img{
+    width: 250px;
+    height: 250px;
+}
+.overlay{
+    position: absolute;
+    background: linear-gradient(#24249c,#010011,#0100);
+    top: 7%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+.ministry-container .card:hover .overlay{
+    opacity: 1;
+}
+.ministry-content{
+    position: absolute;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    left: 1;
+    top: 5%;
+    font: 500 16px;
+    color: #fff;
+    transition: .5s ease-in-out;
+}
+
+
+/*===================================================Take A Step Down =================================*/
+
+
+
+.next_step{
+    padding: 20px 0px;
+    background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
+    margin: 0px 30px;
+    border-radius: 10px;
+}
+.next_step h3{
+    text-align: center;
+    color: #191970;
+    text-transform: uppercase;
+    font-size: 20px
+}
+.container2{
+    display: flex;  
+    flex-flow: row wrap;
+    margin: 5px 15px 5px;
+    border: 0px 2px solid;
+    justify-content: center;
+    height: auto;
+}
+.container2 .container-content1{
+    background: linear-gradient(#f5f7fa,#b8c6d8);
+    display: flex;
+    flex-flow: row wrap ;
+    padding: 20px;
+    border-radius: 20px 25px;
+    margin-right: 50px;
+    width: 300px;
+    font-family: 'Baskervville', serif;
+    font-weight: 500;
+}
+
+.btn1{
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 10px 5px;
+    background: transparent;
+    border: 1px  solid #fff;
+    box-shadow: inset 300px 0px 0px #cabfbf;
+} 
+.btn1:hover{
+    box-shadow: inset 300px 0px 0px #fff;
+    color: #fff;
+    transition: ease-in-out 1.5s;
+}
+.container2 .container-content2{
+    background: linear-gradient(#f5f7fa,#b8c6d8);
+    display: flex;
+    flex-flow: row wrap ;
+    padding: 10px;
+    border-radius: 20px 25px;
+    font-family: 'Baskervville', serif;
+    font-weight: 500;
+    width: 300px;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+.container-content2 img{
+    width: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=====================================Footer==============================================*/
+
+.footer{
+    background: #fff;
+    margin: 0px 30px;
+    padding: 20px 0px;
+}

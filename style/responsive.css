@@ -1,0 +1,122 @@
+@media screen and (min-width:1281px){
+
+       .banner-text hr{
+              width: 600px;
+              height: 4px;
+              background: #191970;
+              margin: 10px 300px;
+       }
+}
+@media (min-width:1025px) and (max-width:1280px){
+       .banner-text hr{
+              width: 600px;
+              height: 4px;
+              background: #191970;
+              margin: 10px 300px;
+       }
+}
+@media (min-width:768px) and (max-width:1024px) {
+ .banner-text h3{
+        text-transform: uppercase;
+        font-size: 1.5em;
+    }
+.banner-text hr{
+        width: 500px;
+        height: 4px;
+        background: #191970;
+        margin: 10px 100px;
+ }
+ .banner-text p{
+        font-size: 1.5em;
+}
+.nav nav{
+       display: none;
+} 
+}
+@media (min-width:768px) and (max-width:1024px) and (orientation: landscape) {
+
+.banner-text{
+        padding-top: 10px;
+ }
+ .banner-text h3{
+        font-size: 1.5em;
+    }
+.banner-text hr{
+        width: 500px;
+        margin-left: 200px;
+ }
+ .banner-text p{
+        font-size: 1em;
+}
+}
+@media (min-width:481px) and (max-width:767px) {
+
+.banner-text{
+        padding-top: 30px;
+ }
+ .banner-text h3{
+        font-size: 1em;
+    }
+.banner-text hr{
+        width: 400px;
+        height: 4px;
+        background: #191970;
+        margin-left: 600px;
+ }
+ .banner-text p{
+        font-size: 1em;
+}
+.nav nav{
+       display: none;
+} 
+
+}
+@media (min-width:481px) and (max-width:767px) and (orientation: landscape) {
+    .banner-text{
+        padding-top: 30px;
+ }
+ .banner-text h3{
+        font-size: 1em;
+    }
+.banner-text hr{
+        width: 400px;
+        margin: 10px;
+ }
+ .banner-text p{
+        font-size: 1em;
+}
+
+}
+
+@media (min-width: 320px) and (max-width:480px) {
+    .banner-text{
+        padding-top: 30px;
+ }
+ .banner-text h3{
+        font-size: 1em;
+    }
+.banner-text hr{
+        width: 300px;
+        margin: 10px;
+ }
+ .banner-text p{
+        font-size: 1em;
+}
+.nav nav{
+       display: none;
+} 
+}
+@media (min-width: 320px) and (max-width:480px) and (orientation: landscape) {
+    .banner-text hr{
+        width: 300px;
+        margin: 10px;
+ }
+ .nav nav{
+       display: none;
+}  
+}
+@media (min-width: 142px) and (max-width:319px) {
+
+}
+
+
